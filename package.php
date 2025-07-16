@@ -31,13 +31,13 @@
             <div class="row">
                 <div class="col-12">
                     <div class="breadcrumb__content">
-                        <h3 class="title">Package</h3>
+                        <h3 class="title">Course</h3>
                         <nav class="breadcrumb">
                             <span property="itemListElement" typeof="ListItem">
                                 <a href="index">Home</a>
                             </span>
                             <span class="breadcrumb-separator"><i class="fas fa-angle-right"></i></span>
-                            <span property="itemListElement" typeof="ListItem">Package</span>
+                            <span property="itemListElement" typeof="ListItem">Course</span>
                         </nav>
                     </div>
                 </div>
@@ -174,7 +174,13 @@
                             <div class="tg-button-wrap">
                                 <a href="admission" class="btn btn-two arrow-btn">
                                     Enroll Now
-                                    <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable">
+                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7L15 7M15 7L9 1M15 7L9 13" stroke="currentcolor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M1 7L15 7M15 7L9 1M15 7L9 13" stroke="currentcolor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
                                 </a>
                             </div>
                         </div>

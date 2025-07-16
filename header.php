@@ -195,6 +195,10 @@
             font-size: 13px;
             padding: 14px 15px;
         }
+
+        .breadcrumb__bg {
+            padding: 30px 0;
+        }
     }
     </style>
 </head>

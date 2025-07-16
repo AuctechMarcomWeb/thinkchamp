@@ -58,6 +58,16 @@
     .breadcrumb__bg {
         padding: 20px 0;
     }
+
+    .section-pb-90 {
+        padding-bottom: 20px;
+    }
+    .section-pt-120 {
+        padding-top: 70px;
+    }
+    .contact-form-wrap {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -239,7 +249,7 @@
                                     <div class="mb-3">
                                         <label for="cv" class="form-label">Upload Your CV or Image (Max: 1MB) *</label>
                                         <input type="file" name="cv" id="cv" class="form-control"
-                                            accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required>
+                                            accept=".pdf,.jpg,.jpeg,.png" required>
                                         <div id="cvError" class="text-danger mt-2" style="display: none;"></div>
                                     </div>
                                 </div>

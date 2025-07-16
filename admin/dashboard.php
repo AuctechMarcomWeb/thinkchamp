@@ -11,7 +11,7 @@
         <div class="row">
 
             <div class="col-xl-4">
-                <a href="add_testimonial.php">
+                <a href="admission_list.php">
                     <div class="card text-white bg-primary">
                         <div class="card-header">
                             <h5 class="card-title text-white">Admission Forms</h5>

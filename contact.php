@@ -153,8 +153,13 @@
                             <div class="form-grp">
                                 <textarea name="message" placeholder="Message" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-two arrow-btn">Submit Now <img
-                                    src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></button>
+                            <button type="submit" class="btn btn-two arrow-btn">Submit Now  <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7L15 7M15 7L9 1M15 7L9 13" stroke="currentcolor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M1 7L15 7M15 7L9 1M15 7L9 13" stroke="currentcolor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></button>
                         </form>
                         <p class="ajax-response mb-0"></p>
                     </div>

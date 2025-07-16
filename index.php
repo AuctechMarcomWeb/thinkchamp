@@ -216,7 +216,7 @@
                             </li>
                         </ul>
                         <div class="about__content-bottom">
-                            <a href="#" class="btn arrow-btn">Read More
+                            <a href="about" class="btn arrow-btn">Read More
                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 7L15 7M15 7L9 1M15 7L9 13" stroke="currentcolor" stroke-width="2"
@@ -295,8 +295,13 @@
                                     <p class="content">Personality development support</p>
                                 </li>
                             </ul>
-                            <a href="admission" class="btn arrow-btn">Enroll Now <img
-                                    src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                            <a href="admission" class="btn arrow-btn">Enroll Now  <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7L15 7M15 7L9 1M15 7L9 13" stroke="currentcolor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M1 7L15 7M15 7L9 1M15 7L9 13" stroke="currentcolor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></a>
                             <div class="shape">
                                 <img src="assets/img/others/choose_shape03.svg" alt="shape" class="tg-motion-effects4">
                             </div>
@@ -448,7 +453,7 @@
                             <div class="col-md-4 col-sm-6">
                                 <div class="fact__item fact__item-two">
                                      <h2 class="count"><span class="odometer" data-count="10"></span>+</h2>
-                                    <p>Expert Tutors</p>
+                                    <p>Experienced Tutors</p>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6">

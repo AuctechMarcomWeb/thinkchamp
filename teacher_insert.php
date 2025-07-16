@@ -29,12 +29,12 @@ if ($cvFile && $cvFile['error'] === UPLOAD_ERR_OK) {
     $fileName = $cvFile['name'];
     $fileSize = $cvFile['size'];
     $fileExt = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
-    $allowedExt = ['pdf', 'doc', 'docx', 'jpg', 'jpeg', 'png'];
+    $allowedExt = ['pdf', 'jpg', 'jpeg', 'png'];
     $uploadDir = 'admin/teacher_cv/';
 
 
     if (!in_array($fileExt, $allowedExt)) {
-        echo "Invalid file type. Only PDF, DOC, DOCX, JPG, JPEG, PNG allowed.";
+        echo "Invalid file type. Only PDF, JPG, JPEG, PNG allowed.";
         exit;
     }
 

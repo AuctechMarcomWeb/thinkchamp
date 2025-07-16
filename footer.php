@@ -47,7 +47,7 @@
                                 <ul class="list-wrap">
                                     <li><a href="index">Home</a></li>
                                     <li><a href="about">About Us</a></li>
-                                    <li><a href="package">Package</a></li>
+                                    <li><a href="package">Course</a></li>
                                     <li><a href="admission">Admission</a></li>
                                     <li><a href="contact">Contact Us</a></li>
 
@@ -171,13 +171,13 @@
 
         <div class="sticky-footer res-dd-none">
             <!-- Left Section: Phone Number -->
-            <a href="" class="phone-link" target="_blank">
+            <a href="package" class="phone-link" >
                 <img width="25" height="25"
                     src="https://img.icons8.com/ink/f0571f/saving-book.png"
                     alt="whatsapp--v1"> Courses
             </a>
             <!-- Right Section: Request a Demo Button -->
-            <a class="demo-btn" href="#">Contact Us</a>
+            <a class="demo-btn" href="contact">Contact Us</a>
         </div>
 
     </footer>
