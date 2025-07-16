@@ -28,7 +28,7 @@
 
                         </p>
                         <div class="banner__btn aos-init aos-animate" data-aos="fade-right" data-aos-delay="800">
-                            <a href="package" class="btn arrow-btn">View Package
+                            <a href="package" class="btn arrow-btn">Start Learning
                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 7L15 7M15 7L9 1M15 7L9 13" stroke="currentcolor" stroke-width="2"
@@ -170,7 +170,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="about__content-five">
+                    <div class="about__content-five courses__details-content">
                         <div class="section__title mb-15">
                             <span class="sub-title"> About Us</span>
                             <h2 class="title bold">Learn, Improve, and Succeed with Think Champ</h2>
@@ -183,6 +183,24 @@
                             meaningful for every child—no matter their school grade.
                             
                         </p>
+                        <h5>Subjects:</h5>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active">Maths</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active">English</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active">Logical Reasoning</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active">Personality Dev.</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active">Creative Thinking</button>
+                            </li>
+                        </ul>
                         <ul class="about__info-list list-wrap">
                             <li class="about__info-list-item">
                                 <i class="flaticon-angle-right"></i>
@@ -198,7 +216,7 @@
                             </li>
                         </ul>
                         <div class="about__content-bottom">
-                            <a href="about" class="btn arrow-btn">Read More
+                            <a href="#" class="btn arrow-btn">Read More
                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 7L15 7M15 7L9 1M15 7L9 13" stroke="currentcolor" stroke-width="2"
@@ -218,7 +236,7 @@
                                     </svg>
                                 </div>
                                 <div class="content">
-                                    <a href="tel:0123456789">+985 0059 500</a>
+                                    <a href="tel:0123456789">+123 599 8989</a>
                                     <span>Call to Questions</span>
                                 </div>
                             </div>
@@ -257,8 +275,10 @@
                                 <h2 class="title">All-in-One Learning Plan</h2>
                             </div>
                             <p style="text-align:justify">Think Champ offers a simple, all-in-one learning plan specially designed for children
-                                aged 8 to 16. This package includes key subjects like Maths, English, Logical Reasoning,
-                                Personality Development, and Creative Thinking — all covered under one price without the
+                                aged 8 to 16. This package includes key subjects like <b>
+                                    Maths, English, Logical Reasoning,
+                                Personality Development, and Creative Thinking
+                                </b> — all covered under one price without the
                                 need to switch between different plans.
                             </p>
                             <ul class="about__info-list list-wrap">
@@ -427,14 +447,14 @@
                             </div>
                             <div class="col-md-4 col-sm-6">
                                 <div class="fact__item fact__item-two">
-                                    <h2 class="count mb-3"><span>8–16</span></h2>
-                                    <p>Age Group</p>
+                                     <h2 class="count"><span class="odometer" data-count="10"></span>+</h2>
+                                    <p>Expert Tutors</p>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6">
                                 <div class="fact__item fact__item-two">
-                                    <h2 class="count">1 Plan</h2>
-                                    <p>Covers All </p>
+                                     <h2 class="count"><span class="odometer" data-count="100"></span>%</h2>
+                                    <p>	Parent Satisfaction</p>
                                 </div>
                             </div>
                         </div>

@@ -358,7 +358,7 @@ $('#admission_form').on('submit', function(e) {
                 $('#successPopup').fadeIn();
                 setTimeout(() => {
                     $('#successPopup').fadeOut();
-                }, 10000);
+                }, 20000);
             } else {
                 alert(res);
             }

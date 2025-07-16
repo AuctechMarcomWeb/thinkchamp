@@ -1,6 +1,7 @@
 <?php include 'check_session.php' ?>
 <?php include 'header.php' ?>
 <?php include 'side_menu.php' ?>
+<?php  include '../db_con.php' ?>
 <!--**********************************
    Content body start
    ***********************************-->
@@ -15,19 +16,42 @@
                         <div class="card-header">
                             <h5 class="card-title text-white">Admission Forms</h5>
                             <?php
-                  include '../db_con.php';
-                  $enrollment_query = "SELECT * FROM enrollment_form";
-                  $enrollment_query_run = mysqli_query($con, $enrollment_query);
+                                $enrollment_query = "SELECT * FROM enrollment_form";
+                                $enrollment_query_run = mysqli_query($con, $enrollment_query);
 
-                  if ($enrollment_total = mysqli_num_rows($enrollment_query_run)) {
-                     echo '<p class="btn bg-white text-primary btn-card"> ' . $enrollment_total . ' </p>';
-                  } else {
-                     echo '<p class="btn bg-white text-primary btn-card"> 0 </p>';
-                  }
-                  ?>
+                                if ($enrollment_total = mysqli_num_rows($enrollment_query_run)) {
+                                    echo '<p class="btn bg-white text-primary btn-card"> ' . $enrollment_total . ' </p>';
+                                } else {
+                                    echo '<p class="btn bg-white text-primary btn-card"> 0 </p>';
+                                }
+                            ?>
                         </div>
                         <div class="card-body mb-0">
                             <h5 class="text-center text-white"><a href="admission_list.php" class="text-white">Admission
+                                    List</a></h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-4">
+                <a href="teacher-applications.php">
+                    <div class="card text-white bg-primary">
+                        <div class="card-header">
+                            <h5 class="card-title text-white">Teacher Applications</h5>
+                            <?php
+                                $teacher_applications_query = "SELECT * FROM teacher_applications";
+                                $teacher_applications_query_run = mysqli_query($con, $teacher_applications_query);
+
+                                if ($teacher_applications_total = mysqli_num_rows($teacher_applications_query_run)) {
+                                    echo '<p class="btn bg-white text-primary btn-card"> ' . $teacher_applications_total . ' </p>';
+                                } else {
+                                    echo '<p class="btn bg-white text-primary btn-card"> 0 </p>';
+                                }
+                            ?>
+                        </div>
+                        <div class="card-body mb-0">
+                            <h5 class="text-center text-white"><a href="teacher-applications.php" class="text-white">Teacher Applications
                                     List</a></h5>
                         </div>
                     </div>
@@ -40,16 +64,15 @@
                         <div class="card-header">
                             <h5 class="card-title text-white">Total Testimonial</h5>
                             <?php
-                  include '../db_con.php';
-                  $testimonial_query = "SELECT * FROM testimonial";
-                  $testimonial_query_run = mysqli_query($con, $testimonial_query);
+                                $testimonial_query = "SELECT * FROM testimonial";
+                                $testimonial_query_run = mysqli_query($con, $testimonial_query);
 
-                  if ($testimonial_total = mysqli_num_rows($testimonial_query_run)) {
-                     echo '<p class="btn bg-white text-primary btn-card"> ' . $testimonial_total . ' </p>';
-                  } else {
-                     echo '<p class="btn bg-white text-primary btn-card"> 0 </p>';
-                  }
-                  ?>
+                                if ($testimonial_total = mysqli_num_rows($testimonial_query_run)) {
+                                    echo '<p class="btn bg-white text-primary btn-card"> ' . $testimonial_total . ' </p>';
+                                } else {
+                                    echo '<p class="btn bg-white text-primary btn-card"> 0 </p>';
+                                }
+                            ?>
                         </div>
                         <div class="card-body mb-0">
                             <h5 class="text-center text-white"><a href="add_testimonial.php"
@@ -65,16 +88,15 @@
                         <div class="card-header">
                             <h5 class="card-title text-white">Total Contacts Query</h5>
                             <?php
-                  include '../db_con.php';
-                  $contact_query = "SELECT * FROM contact";
-                  $contact_query_run = mysqli_query($con, $contact_query);
+                                $contact_query = "SELECT * FROM contact";
+                                $contact_query_run = mysqli_query($con, $contact_query);
 
-                  if ($contact_total = mysqli_num_rows($contact_query_run)) {
-                     echo '<p class="btn bg-white text-primary btn-card"> ' . $contact_total . ' </p>';
-                  } else {
-                     echo '<p class="btn bg-white text-primary btn-card"> 0 </p>';
-                  }
-                  ?>
+                                if ($contact_total = mysqli_num_rows($contact_query_run)) {
+                                    echo '<p class="btn bg-white text-primary btn-card"> ' . $contact_total . ' </p>';
+                                } else {
+                                    echo '<p class="btn bg-white text-primary btn-card"> 0 </p>';
+                                }
+                            ?>
                         </div>
                         <div class="card-body mb-0">
                             <h5 class="text-center text-white"><a href="contact_list.php" class="text-white">Contact

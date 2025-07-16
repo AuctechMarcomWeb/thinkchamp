@@ -15,6 +15,13 @@
                             <span class="nav-text">Admission List</span>
                         </a>
                     </li>
+                     <li><a class="" href="teacher-applications.php" aria-expanded="false">
+                            <i class="flaticon-381-controls-3"></i>
+                            <span class="nav-text">Teacher Applications</span>
+                        </a>
+
+                    </li>
+
                     <li><a class="" href="add_testimonial.php" aria-expanded="false">
                             <i class="flaticon-381-heart"></i>
                             <span class="nav-text">Testimonial</span>

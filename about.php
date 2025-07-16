@@ -49,8 +49,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="about__content-three">
-                        <div class="section__title mb-10">
+                    <div class="about__content-three courses__details-content">
+                        <div class="section__title mb-10 ">
                             <span class="sub-title"> About Us</span>
                             <h2 class="title">
                                 We Provide Smart
@@ -73,21 +73,24 @@
                             strong foundational skills through engaging lessons and easy-to-follow guidance. Every
                             student progresses at their own pace with the support of experienced educators and
                             interactive content that makes learning enjoyable and effective.</p>
-                        <ul class="about__info-list list-wrap">
-                            <li class="about__info-list-item">
-                                <i class="flaticon-angle-right"></i>
-                                <p class="content">Fun Learning Methods</p>
+                        <h5>Subjects:</h5>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active">Maths</button>
                             </li>
-                            <li class="about__info-list-item">
-                                <i class="flaticon-angle-right"></i>
-                                <p class="content">Easy-to-Understand Lessons</p>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active">English</button>
                             </li>
-                            <li class="about__info-list-item">
-                                <i class="flaticon-angle-right"></i>
-                                <p class="content">Expert Instructor Support</p>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active">Logical Reasoning</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active">Personality Dev.</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active">Creative Thinking</button>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </div>
@@ -237,7 +240,8 @@
                         </div>
                         <div class="features__content">
                             <h4 class="title">Fun Practice Quizzes</h4>
-                            <p>Quick mini quizzes and memory games help reinforce topics without making it feel like testing.</p>
+                            <p>Quick mini quizzes and memory games help reinforce topics without making it feel like
+                                testing.</p>
                         </div>
                     </div>
                 </div>
@@ -250,7 +254,8 @@
                         </div>
                         <div class="features__content">
                             <h4 class="title">Peer Learning Moments</h4>
-                            <p>Group tasks and friendly challenges allow students to share ideas, answer together, and bond.
+                            <p>Group tasks and friendly challenges allow students to share ideas, answer together, and
+                                bond.
                             </p>
                         </div>
                     </div>
@@ -264,7 +269,8 @@
                         </div>
                         <div class="features__content">
                             <h4 class="title">Story-Based Lessons</h4>
-                            <p>Chapters are explained using animated characters and stories that make learning feel magical.</p>
+                            <p>Chapters are explained using animated characters and stories that make learning feel
+                                magical.</p>
                         </div>
                     </div>
                 </div>
@@ -277,7 +283,8 @@
                         </div>
                         <div class="features__content">
                             <h4 class="title">Creative Thinking Tools</h4>
-                            <p>Kids build logic and imagination using puzzles, drawing, and storytelling challenges they love.</p>
+                            <p>Kids build logic and imagination using puzzles, drawing, and storytelling challenges they
+                                love.</p>
                         </div>
                     </div>
                 </div>

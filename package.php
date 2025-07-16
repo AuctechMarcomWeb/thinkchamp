@@ -20,10 +20,7 @@
         padding: 0px;
     }
 
-    .courses__details-content .nav-tabs .nav-link {
-        font-size: 13px;
-        padding: 14px 15px;
-    }
+
 }
 </style>
 <main class="main-area fix">

@@ -26,11 +26,16 @@
                             <h4 class="footer__widget-title">Learn with Think Champ</h4>
                             <div class="footer__link">
                                 <ul class="list-wrap">
-                                    <li class="text-light"><i class="fas fa-check-circle text-warning me-2"></i> Fun Learning Methods</li>
-                                    <li class="text-light"><i class="fas fa-check-circle text-warning me-2"></i> Engaging Live Classes</li>
-                                    <li class="text-light"><i class="fas fa-check-circle text-warning me-2"></i> Fun Learning Activities</li>
-                                    <li class="text-light"><i class="fas fa-check-circle text-warning me-2"></i> Expert Instructor Support </li>
-                                    <li class="text-light"><i class="fas fa-check-circle text-warning me-2"></i> Easy-to-Understand Lessons</li>
+                                    <li class="text-light"><i class="fas fa-check-circle text-warning me-2"></i> Fun
+                                        Learning Methods</li>
+                                    <li class="text-light"><i class="fas fa-check-circle text-warning me-2"></i>
+                                        Engaging Classes</li>
+                                    <li class="text-light"><i class="fas fa-check-circle text-warning me-2"></i> Fun
+                                        Learning Activities</li>
+                                    <li class="text-light"><i class="fas fa-check-circle text-warning me-2"></i> Expert
+                                        Instructor Support </li>
+                                    <li class="text-light"><i class="fas fa-check-circle text-warning me-2"></i>
+                                        Easy-to-Understand Lessons</li>
                                 </ul>
                             </div>
                         </div>
@@ -164,98 +169,12 @@
             </div>
         </div>
 
-
-
-        <style>
-        @media (max-width: 768px) {
-            .sticky-footer {
-                height: 50px;
-
-            }
-
-            footer {
-                margin-bottom: 59px;
-            }
-
-            .brochure-btn {
-                position: fixed;
-                bottom: 144px;
-            }
-        }
-
-        .sticky-footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 50px;
-            border-top: 1px solid #ddd;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        .phone-link {
-            flex: 1;
-            text-decoration: none;
-            color: #f0571f;
-            font-size: 1rem;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            height: 100%;
-            background-color: white;
-        }
-
-        .demo-btn {
-            flex: 1;
-            height: 100%;
-            color: #ffffff;
-            font-size: 1rem;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-            background: linear-gradient(to right, #f0571f, #faa419);
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-        }
-
-        @media (max-width: 768px) {
-
-            .phone-link,
-            .demo-btn {
-                font-size: 0.9rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .whatsapp-float {
-                bottom: 130px;
-            }
-
-            .achievement-wrapper.style3 .achievement-contact-meta {
-                margin-top: -195px;
-            }
-        }
-
-        @media screen and (min-width:500px) {
-            .res-dd-none {
-                display: none !important;
-            }
-
-        }
-        </style>
         <div class="sticky-footer res-dd-none">
             <!-- Left Section: Phone Number -->
             <a href="" class="phone-link" target="_blank">
                 <img width="25" height="25"
-                    src="https://img.icons8.com/external-smashingstocks-basic-outline-smashing-stocks/f0571f/external-online-education-science-and-education-smashingstocks-basic-outline-smashing-stocks-4.png"
-                    alt="whatsapp--v1"> Package
+                    src="https://img.icons8.com/ink/f0571f/saving-book.png"
+                    alt="whatsapp--v1"> Courses
             </a>
             <!-- Right Section: Request a Demo Button -->
             <a class="demo-btn" href="#">Contact Us</a>
