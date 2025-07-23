@@ -102,7 +102,7 @@
                             </div>
                             <div class="features__content-three">
                                 <h2 class="title">Expert Tutors</h2>
-                                <p>Our trainers are experienced and student-friendly professionals.
+                                <p>Our Teachers are experienced and student-friendly professionals.
                                     They simplify topics to help students learn faster.
                                 </p>
                             </div>
@@ -178,7 +178,7 @@
                         <p style="text-align: justify;">
                             Think Champ is a US-based learning platform designed specially
                             for children aged 8 to 16.
-                            We offer focused coaching in key subjects like Maths, English, Logical Reasoning,
+                            We offer focused Classes in key subjects like Maths, English, Logical Reasoning,
                             Personality Development, and Creative Thinking. Our goal is to make learning fun, easy, and
                             meaningful for every child—no matter their school grade.
                             
@@ -295,7 +295,7 @@
                                     <p class="content">Personality development support</p>
                                 </li>
                             </ul>
-                            <a href="admission" class="btn arrow-btn">Enroll Now  <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                            <a href="free-assessment" class="btn arrow-btn">Enroll Now  <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 7L15 7M15 7L9 1M15 7L9 13" stroke="currentcolor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
@@ -430,7 +430,7 @@
     <!-- faq-area-end -->
 
     <!-- counter-area -->
-    <section class="fact__area-three fact__bg" data-background="assets/img/bg/fact_bg.jpg">
+    <!-- <section class="fact__area-three fact__bg" data-background="assets/img/bg/fact_bg.jpg">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
@@ -471,7 +471,7 @@
             <img src="assets/img/others/h3_fact_shape01.svg" alt="shape" class="alltuchtopdown">
             <img src="assets/img/others/h3_fact_shape02.svg" alt="shape" class="rotateme">
         </div>
-    </section>
+    </section> -->
     <!-- counter-area-end -->
 
     <!-- cta-area -->
@@ -484,7 +484,7 @@
                         <h2 class="title">One Plan. Many Skills. Full Support.</h2>
                         <p>We teach the right things at the right age. Fill the form to get your child started today.
                         </p>
-                        <a href="admission" class="btn arrow-btn">Enroll Now<svg width="16" height="14" viewBox="0 0 16 14"
+                        <a href="free-assessment" class="btn arrow-btn">Enroll Now<svg width="16" height="14" viewBox="0 0 16 14"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 7L15 7M15 7L9 1M15 7L9 13" stroke="currentcolor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round"></path>

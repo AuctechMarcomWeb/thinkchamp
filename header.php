@@ -128,6 +128,44 @@
         text-transform: uppercase;
     }
 
+    .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 100px;
+        right: 20px;
+        z-index: 999;
+        background-color: #25d366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        animation: bounce 2s infinite;
+        transition: transform 0.3s;
+    }
+
+    .whatsapp-float img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+    }
+
+    @keyframes bounce {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-8px);
+        }
+    }
+
     @media (max-width: 768px) {
 
         .phone-link,
@@ -139,8 +177,9 @@
         }
 
         .whatsapp-float {
-            bottom: 130px;
+            bottom: 70px;
         }
+    
 
         .achievement-wrapper.style3 .achievement-contact-meta {
             margin-top: -195px;
@@ -276,7 +315,7 @@
                                         <li><a href="index">Home</a> </li>
                                         <li><a href="about">Why think champ</a> </li>
                                         <li><a href="package">Course</a> </li>
-                                        <li><a href="admission"> Admissions</a> </li>
+                                        <li><a href="free-assessment"> Free Assessment</a> </li>
                                         <li><a href="become-teacher"> Become a Teacher</a> </li>
                                         <li><a href="contact">Contact Us</a> </li>
                                     </ul>

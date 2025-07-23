@@ -130,27 +130,19 @@
                 </div>
                 <div class="col-xl-3 col-lg-4">
                     <div class="courses__details-sidebar">
-                        <!-- <div class="courses__details-video">
-                            <img src="assets/img/courses/course_thumb02.jpg" alt="img">
-                            <a href="https://www.youtube.com/watch?v=YwrHGratByU" class="popup-video"><i
-                                    class="fas fa-play"></i></a>
-                        </div> -->
-                        <div class="courses__cost-wrap">
-                            <span>Course Fee:</span>
-                            <h2 class="title">$100.00 <del>$320.00</del></h2>
-                        </div>
+                      
                         <div class="courses__information-wrap">
                             <h5 class="title">Package Info:</h5>
                             <ul class="list-wrap">
                                 <li>
                                     <img src="assets/img/icons/course_icon01.svg" alt="img" class="injectable">
                                     Age Group
-                                    <span> 8–16 years</span>
+                                    <span> 7–16 years</span>
                                 </li>
                                 <li>
                                     <img src="assets/img/icons/course_icon02.svg" alt="img" class="injectable">
                                     Course Duration
-                                    <span>3 Months</span>
+                                    <span style="font-size:14px">1-3 Months</span>
                                 </li>
                                 <li>
                                     <img src="assets/img/icons/course_icon03.svg" alt="img" class="injectable">
@@ -162,17 +154,13 @@
                                     Language
                                     <span>Easy English</span>
                                 </li>
-                                <li>
-                                    <img src="assets/img/icons/course_icon05.svg" alt="img" class="injectable">
-                                    Certifications
-                                    <span>Yes</span>
-                                </li>
+                              
 
                             </ul>
                         </div>
                         <div class="courses__details-enroll">
                             <div class="tg-button-wrap">
-                                <a href="admission" class="btn btn-two arrow-btn">
+                                <a href="free-assessment" class="btn btn-two arrow-btn">
                                     Enroll Now
                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">

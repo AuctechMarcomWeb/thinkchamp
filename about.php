@@ -66,7 +66,7 @@
                                 for Every Child
                             </h2>
                         </div>
-                        <p class="desc" style="text-align:justify">Think Champ is a US-based online coaching platform
+                        <p class="desc" style="text-align:justify">Think Champ is a US-based platform
                             crafted especially for children aged 8 to 16. We offer a unique, grade-free learning
                             experience covering subjects like Maths, English, Logical Reasoning, Personality
                             Development, and Creative Thinking — all in one package. Our program focuses on building
