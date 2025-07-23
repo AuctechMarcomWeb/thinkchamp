@@ -47,7 +47,7 @@
                                 <ul class="list-wrap">
                                     <li><a href="index">Home</a></li>
                                     <li><a href="about">About Us</a></li>
-                                    <li><a href="package">Course</a></li>
+                                    <li><a href="package">Session</a></li>
                                     <li><a href="free-assessment">Free Assessment</a></li>
                                     <li><a href="contact">Contact Us</a></li>
 

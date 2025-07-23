@@ -314,7 +314,7 @@
                                     <ul class="navigation">
                                         <li><a href="index">Home</a> </li>
                                         <li><a href="about">Why think champ</a> </li>
-                                        <li><a href="package">Course</a> </li>
+                                        <li><a href="package">Session</a> </li>
                                         <li><a href="free-assessment"> Free Assessment</a> </li>
                                         <li><a href="become-teacher"> Become a Teacher</a> </li>
                                         <li><a href="contact">Contact Us</a> </li>
