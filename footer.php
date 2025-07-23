@@ -173,7 +173,7 @@
             <!-- Left Section: Phone Number -->
             <a href="package" class="phone-link">
                 <img width="25" height="25" src="https://img.icons8.com/ink/f0571f/saving-book.png" alt="whatsapp--v1">
-                Courses
+               Session
             </a>
             <!-- Right Section: Request a Demo Button -->
             <a class="demo-btn" href="contact">Contact Us</a>
