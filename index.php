@@ -154,11 +154,11 @@
                 <div class="col-lg-6 col-md-8">
                     <div class="about__images-five">
                         <div class="about__mask-img-one">
-                            <img src="assets/img/others/h5_about_img01.jpg" alt="img">
+                            <img src="assets\img\Home\h5_about_image.jpg" alt="img">
                         </div>
                         <div class="about__mask-img-two aos-init aos-animate" data-aos="fade-right"
                             data-aos-delay="200">
-                            <img src="assets/img/others/h5_about_img02.jpg" alt="img">
+                            <img src="assets\img\Home\h5_about_image02.jpg" alt="img">
                         </div>
                         <div class="shape">
                             <img src="assets/img/others/h5_about_img_shape01.svg" alt="shape" data-aos="fade-down-left"
@@ -264,7 +264,7 @@
                 <div class="row">
                     <div class="col-lg-5 order-0 order-lg-2">
                         <div class="choose__img" data-aos="fade-left" data-aos-delay="300">
-                            <img src="assets/img/others/choose_img.jpg" alt="img">
+                            <img src="assets\img\Home\choose_image.jpg" alt="img">
                            
                         </div>
                     </div>
@@ -325,7 +325,7 @@
                 <div class="col-lg-6 col-md-8 order-0 order-lg-2">
                     <div class="faq__img-three">
                         <div class="faq__mask-img">
-                            <img src="assets/img/others/h5_faq_img.jpg" alt="img">
+                            <img src="assets\img\Home\h5_faq_img.jpg" alt="img">
                         </div>
                         <div class="faq__img-shape">
 

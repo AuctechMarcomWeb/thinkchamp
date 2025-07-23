@@ -60,7 +60,7 @@
             <div class="row" style="flex-wrap: wrap-reverse;">
                 <div class="col-xl-9 col-lg-8 course-det">
                     <div class="courses__details-thumb">
-                        <img src="assets/img/courses/courses_details.jpg" alt="img">
+                        <img src="assets\img\course_bg_image.jpg" alt="img">
                     </div>
                     <div class="courses__details-content">
 
