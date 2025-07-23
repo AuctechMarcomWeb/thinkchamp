@@ -9,66 +9,145 @@
 <main class="main-area fix">
 
     <!-- banner-area -->
-    <section class="banner-area banner-bg-five tg-motion-effects" data-background="assets/img/banner/h5_hero_bg.jpg"
-        style="background-image: url(&quot;assets/img/banner/h5_hero_bg.jpg&quot;);">
+<div id="heroBannerCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
 
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <section class="banner-area banner-bg-five tg-motion-effects" style="background-image: url('assets/img/banner/h5_hero_bg.jpg');">
         <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-xl-5 col-lg-5">
-                    <div class="banner__content-five">
-                        <span class="sub-title aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">Welcome
-                            to <span class="text-warning fw-bold">Think
-                                Champ</span></span>
-                        <h2 class="title aos-init aos-animate" data-aos="fade-right" data-aos-delay="400">Learn Better.
-                            <span>Think Bigger </span>
-                        </h2>
-                        <p data-aos="fade-right" data-aos-delay="600" class="aos-init aos-animate">We help students
-                            learn better with smart methods and experienced teachers.
-                            Your future starts here with strong basics and clear concepts.
-
-                        </p>
-                        <div class="banner__btn aos-init aos-animate" data-aos="fade-right" data-aos-delay="800">
-                            <a href="package" class="btn arrow-btn">Start Learning
-                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 7L15 7M15 7L9 1M15 7L9 13" stroke="currentcolor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M1 7L15 7M15 7L9 1M15 7L9 13" stroke="currentcolor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-5 col-lg-5">
+              <div class="banner__content-five">
+                <span class="sub-title">Welcome to <span class="text-warning fw-bold">Think Champ</span></span>
+                <h2 class="title">Learn Better. <span>Think Bigger </span></h2>
+                <p>We help students learn better with smart methods and experienced teachers. Your future starts here with strong basics and clear concepts.</p>
+                <div class="banner__btn">
+                  <a href="package" class="btn arrow-btn">Start Learning</a>
                 </div>
-                <div class="col-xl-7 col-lg-7 col-md-9 col-sm-10">
-                    <div class="banner__images-five">
-                        <img src="assets/img/banner/h5_hero_img.png" alt="img">
-                        <div class="shape-wrap">
-                            <div class="shape-one aos-init aos-animate" data-aos="fade-up-right" data-aos-delay="800">
-                                <img src="assets/img/banner/h5_hero_shape04.svg" alt="shape" class="tg-motion-effects1"
-                                    style="transform: matrix(1, 0, 0, 1, 6.26247, -8.14321);">
-                            </div>
-                            <div class="shape-two aos-init aos-animate" data-aos="fade-down-left" data-aos-delay="800">
-                                <img src="assets/img/banner/h5_hero_shape05.svg" alt="shape" class="tg-motion-effects3"
-                                    style="transform: matrix(1, 0, 0, 1, -3.13123, 4.07161);">
-                            </div>
-                            <div class="shape-three aos-init aos-animate" data-aos="fade-up-left" data-aos-delay="800">
-                                <img src="assets/img/banner/h5_hero_shape06.svg" alt="shape">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="col-xl-7 col-lg-7 col-md-9 col-sm-10">
+              <div class="banner__images-five">
+                <img src="assets/img/banner/h5_hero_img.png" alt="img">
+                <div class="shape-wrap">
+                  <div class="shape-one">
+                    <img src="assets/img/banner/h5_hero_shape04.svg" alt="shape" class="tg-motion-effects1">
+                  </div>
+                  <div class="shape-two">
+                    <img src="assets/img/banner/h5_hero_shape05.svg" alt="shape" class="tg-motion-effects3">
+                  </div>
+                  <div class="shape-three">
+                    <img src="assets/img/banner/h5_hero_shape06.svg" alt="shape">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="banner__shape-wrap-two">
-            <img src="assets/img/banner/h5_hero_shape01.svg" alt="shape" data-aos="fade-right" data-aos-delay="1000"
-                class="aos-init aos-animate">
-            <img src="assets/img/banner/h5_hero_shape02.svg" alt="shape" class="tg-motion-effects7"
-                style="transform: matrix(1, 0, 0, 1, 12.5249, -16.2864);">
-            <img src="assets/img/banner/h5_hero_shape03.svg" alt="shape" class="tg-motion-effects3"
-                style="transform: matrix(1, 0, 0, 1, -3.13123, 4.07161);">
+          <img src="assets/img/banner/h5_hero_shape01.svg" alt="shape">
+          <img src="assets/img/banner/h5_hero_shape02.svg" alt="shape" class="tg-motion-effects7">
+          <img src="assets/img/banner/h5_hero_shape03.svg" alt="shape" class="tg-motion-effects3">
         </div>
-    </section>
+      </section>
+    </div>
+
+    <!-- Slide 2 (copy of slide 1) -->
+    <div class="carousel-item">
+      <section class="banner-area banner-bg-five tg-motion-effects" style="background-image: url('assets/img/banner/h5_hero_bg.jpg');">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-5 col-lg-5">
+              <div class="banner__content-five">
+                <span class="sub-title">Welcome to <span class="text-warning fw-bold">Think Champ</span></span>
+                <h2 class="title">Learn Better. <span>Think Bigger </span></h2>
+                <p>We help students learn better with smart methods and experienced teachers. Your future starts here with strong basics and clear concepts.</p>
+                <div class="banner__btn">
+                  <a href="package" class="btn arrow-btn">Start Learning</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-9 col-sm-10">
+              <div class="banner__images-five">
+                <img src="assets/img/banner/h5_hero_img.png" alt="img">
+                <div class="shape-wrap">
+                  <div class="shape-one">
+                    <img src="assets/img/banner/h5_hero_shape04.svg" alt="shape" class="tg-motion-effects1">
+                  </div>
+                  <div class="shape-two">
+                    <img src="assets/img/banner/h5_hero_shape05.svg" alt="shape" class="tg-motion-effects3">
+                  </div>
+                  <div class="shape-three">
+                    <img src="assets/img/banner/h5_hero_shape06.svg" alt="shape">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner__shape-wrap-two">
+          <img src="assets/img/banner/h5_hero_shape01.svg" alt="shape">
+          <img src="assets/img/banner/h5_hero_shape02.svg" alt="shape" class="tg-motion-effects7">
+          <img src="assets/img/banner/h5_hero_shape03.svg" alt="shape" class="tg-motion-effects3">
+        </div>
+      </section>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <section class="banner-area banner-bg-five tg-motion-effects" style="background-image: url('assets/img/banner/h5_hero_bg.jpg');">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-5 col-lg-5">
+              <div class="banner__content-five">
+                <span class="sub-title">Welcome to <span class="text-warning fw-bold">Think Champ</span></span>
+                <h2 class="title">Learn Better. <span>Think Bigger </span></h2>
+                <p>We help students learn better with smart methods and experienced teachers. Your future starts here with strong basics and clear concepts.</p>
+                <div class="banner__btn">
+                  <a href="package" class="btn arrow-btn">Start Learning</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-9 col-sm-10">
+              <div class="banner__images-five">
+                <img src="assets/img/banner/h5_hero_img.png" alt="img">
+                <div class="shape-wrap">
+                  <div class="shape-one">
+                    <img src="assets/img/banner/h5_hero_shape04.svg" alt="shape" class="tg-motion-effects1">
+                  </div>
+                  <div class="shape-two">
+                    <img src="assets/img/banner/h5_hero_shape05.svg" alt="shape" class="tg-motion-effects3">
+                  </div>
+                  <div class="shape-three">
+                    <img src="assets/img/banner/h5_hero_shape06.svg" alt="shape">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner__shape-wrap-two">
+          <img src="assets/img/banner/h5_hero_shape01.svg" alt="shape">
+          <img src="assets/img/banner/h5_hero_shape02.svg" alt="shape" class="tg-motion-effects7">
+          <img src="assets/img/banner/h5_hero_shape03.svg" alt="shape" class="tg-motion-effects3">
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  <!-- Navigation Buttons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroBannerCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" style="filter: invert(1);" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroBannerCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" style="filter: invert(1);" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
     <!-- banner-area-end -->
 
 
