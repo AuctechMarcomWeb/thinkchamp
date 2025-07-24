@@ -323,7 +323,8 @@ label {
                                     <div class="input-group mb-3" style="width: auto;">
                                         <span class="input-group-text"><i class="bi bi-calendar"></i></span>
                                         <input type="text" class="form-control text-center selectedDate"
-                                            name="selected_date" readonly placeholder="Select a date">
+                                            name="selected_date" id="selectedDate" readonly placeholder="Select a date">
+                                           
                                     </div>
                                 </div>
                                 <div class="calendar-grid">
@@ -338,9 +339,9 @@ label {
 
                                 <div class="calendar-grid" id="calendarDays"></div>
 
-                                <div class="d-flex justify-content-center"> <button type="button" onclick="showSlots()"
+                                <!-- <div class="d-flex justify-content-center"> <button type="button" onclick="showSlots()"
                                         class="btn btn-primary w-50 mt-2">Show Slot</button>
-                                </div>
+                                </div> -->
                             </div>
                         </form>
 
@@ -358,44 +359,7 @@ label {
                                         name="selected_date" readonly placeholder="Select a date">
                                 </div>
                             </div>
-                            <div class="slot-grid">
-                                <!-- PHP Developer will loop over 24 slots with availability check -->
-                                <!-- Sample Static Slots (3 available, 1 booked) -->
-
-                                <div class="slot-box slot-available">
-                                    <div class="slot-time">1:00 PM - 2:00 PM</div>
-                                    <button type="button" class="btn btn-success w-100" data-bs-toggle="modal"
-                                        data-bs-target="#bookingModal"> Book
-                                    </button>
-
-                                </div>
-
-                                <div class="slot-box slot-booked">
-                                    <div class="slot-time">2:00 PM - 3:00 PM</div>
-                                    <div class="slot-status">
-                                        <i class="bi bi-x-circle-fill"></i> Booked
-                                    </div>
-                                </div>
-
-                                <div class="slot-box slot-available">
-                                    <div class="slot-time">3:00 PM - 4:00 PM</div>
-                                    <button type="button" class="btn btn-success w-100" data-bs-toggle="modal"
-                                        data-bs-target="#bookingModal">
-                                        Book
-                                    </button>
-
-                                </div>
-
-                                <div class="slot-box slot-available">
-                                    <div class="slot-time">4:00 PM - 5:00 PM</div>
-                                    <button type="button" class="btn btn-success w-100" data-bs-toggle="modal"
-                                        data-bs-target="#bookingModal"> Book
-                                    </button>
-
-                                </div>
-
-                                <!-- PHP Loop ends here -->
-                            </div>
+                            <div class="slot-grid" id="slotGrid">   </div>
                         </div>
 
 
@@ -483,6 +447,9 @@ label {
                                         title="Enter a valid phone number with 7 to 20 digits" required>
                                     <input type="hidden" name="phone" id="FullPhoneNo" maxlength="30">
                                 </div>
+                                 <input type="hidden" class="form-control" name="time_slot" id="modalSlot">
+                                <input type="hidden" class="form-control" name="booking_date" id="modalDate">
+                               
 
                                 <!-- Email -->
                                 <div class="col-md-6">
@@ -688,6 +655,7 @@ label {
 
 
 <!-- JavaScript for intl-tel-input -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 <script>
 var input = document.querySelector("#Phone-field");
@@ -729,23 +697,32 @@ document.getElementById('Phone-field').addEventListener('input', function() {
 </script>
 <!-- ----------------======-------------------- -->
 <script>
-$('#admission_form').on('submit', function(e) {
-    e.preventDefault();
-    $.ajax({
-        url: 'admission_insert.php',
-        type: 'POST',
-        data: $(this).serialize(),
-        success: function(res) {
-            if (res == 'success') {
-                $('#admission_form')[0].reset();
-                $('#successPopup').fadeIn();
-                setTimeout(() => {
-                    $('#successPopup').fadeOut();
-                }, 20000);
-            } else {
-                alert(res);
+$(document).ready(function() {
+    $('#admission_form').on('submit', function(e) {
+        e.preventDefault();
+
+        $.ajax({
+            url: 'admission_insert.php',
+            type: 'POST',
+            data: $(this).serialize(),
+            success: function(res) {
+                if (res.trim() === 'success') { 
+                    $('#admission_form')[0].reset();
+                    $('#successPopup').fadeIn();
+                    $('#bookingModal').modal('hide');
+                    showSlots();
+
+                    setTimeout(() => {
+                        $('#successPopup').fadeOut();
+                    }, 2000); 
+                } else {
+                    alert("Error: " + res); 
+                }
+            },
+            error: function(xhr, status, error) {
+                alert("AJAX Error: " + error);
             }
-        }
+        });
     });
 });
 </script>
@@ -766,8 +743,8 @@ document.querySelectorAll('.open-gdpr').forEach(el => {
 
 <!-- ===
  =====CALENDER JS BY ZAID ===== -->
-<script>
-$(function() {
+ <script>
+$(function () {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
@@ -822,12 +799,15 @@ $(function() {
                 if (compStr === todayStr) {
                     $dayDiv.addClass('active');
                     $selectedInputs.val(dateStr);
+                    showSlots(dateStr); // Call showSlots on initial render for today
                 }
 
-                $dayDiv.on('click', function() {
+                $dayDiv.on('click', function () {
                     $('.calendar-day').removeClass('active');
                     $(this).addClass('active');
-                    $selectedInputs.val($(this).data('date'));
+                    const selectedDate = $(this).data('date');
+                    $selectedInputs.val(selectedDate);
+                    showSlots(selectedDate); // Call showSlots on day click
                 });
             }
 
@@ -835,7 +815,7 @@ $(function() {
         }
     }
 
-    $monthSelect.add($yearSelect).on('change', function() {
+    $monthSelect.add($yearSelect).on('change', function () {
         renderCalendar(parseInt($yearSelect.val()), parseInt($monthSelect.val()));
     });
 
@@ -843,12 +823,31 @@ $(function() {
 });
 </script>
 <!-- ======= -->
+
 <script>
 function showSlots() {
-    document.getElementById("slotSection").style.display = "block";
+    const date = document.getElementById("selectedDate").value;
+    if (!date) {
+        alert("Please select a date first.");
+        return;
+    }
+
+    fetch("get_slots.php?date=" + date)
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("slotGrid").innerHTML = html;
+            document.getElementById("slotSection").style.display = "block";
+        });
 }
 </script>
-
+<script>
+function fillSlot(date, slotKey, timeLabel) {
+    document.getElementById("modalDate").value = date;
+    document.getElementById("modalSlot").value = slotKey;
+    // Optional: show selected time in modal
+    document.getElementById("modalTimeLabel").innerText = timeLabel;
+}
+</script>
 
 <!--  -->
 <?php include ('footer.php');?>

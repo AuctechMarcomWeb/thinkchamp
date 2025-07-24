@@ -21,6 +21,8 @@
                                     <th>Class/Grade</th>
                                     <th>Mobile No.</th>
                                     <th>Email</th>
+                                    <th  style="min-width:150px">Time</th>
+                                    <th  style="min-width:150px">Date</th>
                                     <th style="min-width:150px">Guardian Name</th>
                                     <th style="min-width:160px">Guardian Mobile</th>
                                     <th>Address</th>
@@ -33,7 +35,7 @@
                                 <?php
                                     include('../db_con.php');
                                     $i = 1;
-                                    $sql = "SELECT * FROM enrollment_form ORDER BY added_on DESC";
+                                    $sql = "SELECT * FROM enrollment_form ORDER BY created_at DESC";
                                     $res = mysqli_query($con, $sql);
                                     while ($row = mysqli_fetch_assoc($res)) {
                                 ?>
@@ -43,12 +45,14 @@
                                     <td><?php echo htmlspecialchars($row['student_age']); ?></td>
                                     <td><?php echo htmlspecialchars($row['class_grade']); ?></td>
                                     <td><?php echo htmlspecialchars($row['mobile']); ?></td>
+                                    <td><?php echo htmlspecialchars($row['time_slot']); ?></td>
+                                    <td><?php echo htmlspecialchars($row['booking_date']); ?></td>
                                     <td><?php echo htmlspecialchars($row['email']); ?></td>
                                     <td><?php echo htmlspecialchars($row['guardian_name']); ?></td>
                                     <td><?php echo htmlspecialchars($row['guardian_mobile']); ?></td>
                                     <td><?php echo htmlspecialchars($row['address']); ?></td>
                                     <td><?php echo htmlspecialchars($row['message']); ?></td>
-                                    <td><?php echo date("d M Y h:i A", strtotime($row['added_on'])); ?></td>
+                                    <td><?php echo date("d M Y h:i A", strtotime($row['created_at'])); ?></td>
                                     <td>
                                         <form method="POST" action="admission_dlt.php">
                                             <input type="hidden" name="user_id" value="<?php echo $row['s_no']; ?>">
