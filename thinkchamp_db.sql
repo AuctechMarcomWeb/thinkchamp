@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jul 16, 2025 at 10:01 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Host: localhost
+-- Generation Time: Jul 24, 2025 at 02:13 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -63,6 +63,13 @@ CREATE TABLE `contact` (
   `added_date` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`id`, `name`, `email`, `phone`, `message`, `added_date`) VALUES
+(2, 'Mohd Danish', 'danishmohd78@gmail.com', '+108948448903', 'test', '2025-07-24 12:16:35');
+
 -- --------------------------------------------------------
 
 --
@@ -70,18 +77,32 @@ CREATE TABLE `contact` (
 --
 
 CREATE TABLE `enrollment_form` (
-  `s_no` int(11) NOT NULL,
-  `full_name` varchar(100) NOT NULL,
-  `student_age` varchar(20) NOT NULL,
-  `class_grade` varchar(50) NOT NULL,
-  `mobile` varchar(20) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `guardian_name` varchar(100) NOT NULL,
-  `guardian_mobile` varchar(255) NOT NULL,
-  `message` varchar(255) NOT NULL,
-  `address` text NOT NULL,
-  `added_on` datetime DEFAULT current_timestamp()
+  `id` int(11) NOT NULL,
+  `full_name` varchar(100) DEFAULT NULL,
+  `student_age` varchar(10) DEFAULT NULL,
+  `class_grade` varchar(50) DEFAULT NULL,
+  `mobile` varchar(20) DEFAULT NULL,
+  `time_slot` varchar(20) DEFAULT NULL,
+  `booking_date` varchar(50) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `guardian_name` varchar(100) DEFAULT NULL,
+  `guardian_mobile` varchar(20) DEFAULT NULL,
+  `address` text DEFAULT NULL,
+  `message` text DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `enrollment_form`
+--
+
+INSERT INTO `enrollment_form` (`id`, `full_name`, `student_age`, `class_grade`, `mobile`, `time_slot`, `booking_date`, `email`, `guardian_name`, `guardian_mobile`, `address`, `message`, `created_at`) VALUES
+(1, 'Mohd Danish', '9', 'first', '+108948448903', '10-11', '25-07-2025', 'danishmohd78@gmail.com', 'Mohd Danish', '08948448903', '94/93 nai sadak\r\nfaheem market', 'test', '2025-07-24 06:58:30'),
+(2, 'Mohd Danish', '13', 'first', '+108948448903', '14-15', '25-07-2025', 'danishmohd78@gmail.com', 'Mohd Danish', '08948448903', '94/93 nai sadak\r\nfaheem market', 'testing', '2025-07-24 07:01:52'),
+(3, 'Mohd Danish', '15', 'first', '+18948448903', '9-10', '26-07-2025', 'danishmohd78@gmail.com', 'Mohd Danish', '8948448903', '94/93 nai sadak\r\nfaheem market', 'testing developer', '2025-07-24 09:11:01'),
+(4, 'Mohd Danish', '9', 'first', '+108948448903', '7-8', '24-07-2025', 'danishmohd78@gmail.com', 'Mohd Danish', '08948448903', '94/93 nai sadak\r\nfaheem market', 'test', '2025-07-24 10:47:23'),
+(5, 'Mohd Danish', '9', 'first', '+108948448903', '9-10', '24-07-2025', 'danishmohd78@gmail.com', 'Mohd Danish', '08948448903', '94/93 nai sadak\r\nfaheem market', 'testing', '2025-07-24 11:42:46'),
+(6, 'Mohd Danish', '9', 'first', '+108948448903', '21-22', '25-07-2025', 'danishmohd78@gmail.com', 'Mohd Danish', '08948448903', '94/93 nai sadak\r\nfaheem market', 'testing two', '2025-07-24 11:43:52');
 
 -- --------------------------------------------------------
 
@@ -149,7 +170,7 @@ ALTER TABLE `contact`
 -- Indexes for table `enrollment_form`
 --
 ALTER TABLE `enrollment_form`
-  ADD PRIMARY KEY (`s_no`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `teacher_applications`
@@ -177,13 +198,13 @@ ALTER TABLE `add_user`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `enrollment_form`
 --
 ALTER TABLE `enrollment_form`
-  MODIFY `s_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `teacher_applications`
