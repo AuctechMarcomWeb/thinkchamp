@@ -20,9 +20,10 @@
                                     <th>Age</th>
                                     <th>Class/Grade</th>
                                     <th>Mobile No.</th>
-                                    <th>Email</th>
+                                   
                                     <th  style="min-width:150px">Time</th>
                                     <th  style="min-width:150px">Date</th>
+                                    <th>Email</th>
                                     <th style="min-width:150px">Guardian Name</th>
                                     <th style="min-width:160px">Guardian Mobile</th>
                                     <th>Address</th>
