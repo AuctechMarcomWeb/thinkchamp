@@ -21,8 +21,8 @@
                                     <th>Class/Grade</th>
                                     <th>Mobile No.</th>
                                    
-                                    <th  style="min-width:150px">Time</th>
-                                    <th  style="min-width:150px">Date</th>
+                                    <th  style="min-width:150px">Time Slot</th>
+                                    <th  style="min-width:150px">Booking Date</th>
                                     <th>Email</th>
                                     <th style="min-width:150px">Guardian Name</th>
                                     <th style="min-width:160px">Guardian Mobile</th>
@@ -56,7 +56,7 @@
                                     <td><?php echo date("d M Y h:i A", strtotime($row['created_at'])); ?></td>
                                     <td>
                                         <form method="POST" action="admission_dlt.php">
-                                            <input type="hidden" name="user_id" value="<?php echo $row['s_no']; ?>">
+                                            <input type="hidden" name="user_id" value="<?php echo $row['id']; ?>">
                                             <button type="submit" class="btn btn-danger shadow btn-xs sharp"
                                                 name="delete"
                                                 onclick="return confirm('Are you sure you want to delete this entry?')">

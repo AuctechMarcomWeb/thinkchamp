@@ -5,7 +5,7 @@ if (isset($_POST['delete'])) {
     $user_id = intval($_POST['user_id']); 
 
    
-    $del_que = "DELETE FROM enrollment_form WHERE s_no = $user_id";
+    $del_que = "DELETE FROM enrollment_form WHERE id = $user_id";
 
    
     if (mysqli_query($con, $del_que)) {
